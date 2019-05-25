@@ -1,0 +1,13 @@
+<mat-toolbar color="primary">My App</mat-toolbar>
+
+<hr>
+
+<input type = "text" [(ngModel)]="message">
+<button style="margin-left: 20px" (click)="sendMessage()">Publish Message to Server</button>
+
+<hr>
+
+<button (click)="getMessageFromServer()">Get Message</button>
+
+
+<div *ngFor="let messag of messages">{{messag}}</div>
